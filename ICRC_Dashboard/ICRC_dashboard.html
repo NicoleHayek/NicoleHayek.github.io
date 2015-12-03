@@ -111,7 +111,7 @@ var ndx                  = crossfilter(experiments),
 	  MapDim       		 = ndx.dimension(function(d) {return d.Name_1;}),
       MapGroup     		 = MapDim.group();
       
-d3.json("admin1_map.geojson", function (statesJson) {
+d3.json("admin1_map.json", function (statesJson) {
 
   mapChart.width(300)
           .height(700)
