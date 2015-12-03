@@ -1,31 +1,31 @@
-Type	Activity	Beneficiary	Date	Area	Name_1	Gov
-Assistance	Food	31468	02/26/2014	Akkar	North	Akkar
-Assistance	Healthcare	421	02/13/2014	Akkar	North	Akkar
-Assistance	Healthcare	421	02/13/2014	Akkar	North	Akkar
-Assistance	drugs	396657	02/26/2015	Akkar	North	Akkar
-Assistance	Food	30000	02/26/2015	Akkar	North	Akkar
-Assistance	NFI	15000	02/26/2015	Akkar	North	Akkar
-Assistance	Agriculture	15000	02/26/2014	Baalbek	North	Baalbek
-Protection	Tracing	75	09/21/2015	Baalbek	Bekaa	Baalbek
-Protection	Detainees	6943	10/21/2015	Baalbek	Bekaa	Baalbek
-Protection	RCM	40445	10/21/2015	Baalbek	Bekaa	Baalbek
-Protection	Tracing	10	10/21/2015	Baalbek	Bekaa	Baalbek
-Protection	Detainees	7250	11/21/2015	Baalbek	Bekaa	Baalbek
-Assistance	NFI	34704	02/26/2014	Nabatiyeh	El Nabatiyeh	Nabatiyeh
-Assistance	drugs	369216	09/14/2015	Nabatiyeh	El Nabatiyeh	Nabatiyeh
-Protection	RCM	1846	09/21/2015	Nabatiyeh	El Nabatiyeh	Nabatiyeh
-Assistance	Food	31468	02/26/2014	North	North	North
-Assistance	Food	31468	02/26/2014	North	North	North
-Assistance	Cash	16020	03/13/2014	North	North	North
-Assistance	WatHab	384107	03/13/2014	North	North	North
-Assistance	Healthcare	421	02/13/2014	North	North	North
-Assistance	Weapon Wounded	20	04/13/2015	North	North	North
-Assistance	Weapon Wounded	20	04/13/2015	North	North	North
-Assistance	Rehabilitation	102	02/26/2014	North	North	North
-Assistance	Food	31468	02/26/2014	South	South	South
-Assistance	Agriculture	95	02/14/2014	South	South	South
-Assistance	Cash	6725	02/14/2015	South	South	South
-Assistance	WatHab	321249	02/14/2015	South	South	South
-Assistance	Healthcare	38	02/14/2015	South	South	South
-Assistance	Weapon Wounded	128	08/14/2015	South	South	South
-Assistance	Rehabilitation	298	02/14/2015	South	South	South
+Type,Activity,Beneficiary,Date,Area,Name_1,Gov
+Assistance,Food,31468,02/26/2014,Akkar,North,Akkar
+Assistance,Healthcare,421,02/13/2014,Akkar,North,Akkar
+Assistance,Healthcare,421,02/13/2014,Akkar,North,Akkar
+Assistance,drugs,396657,02/26/2015,Akkar,North,Akkar
+Assistance,Food,30000,02/26/2015,Akkar,North,Akkar
+Assistance,NFI,15000,02/26/2015,Akkar,North,Akkar
+Assistance,Agriculture,15000,02/26/2014,Baalbek,North,Baalbek
+Protection,Tracing,75,09/21/2015,Baalbek,Bekaa,Baalbek
+Protection,Detainees,6943,10/21/2015,Baalbek,Bekaa,Baalbek
+Protection,RCM,40445,10/21/2015,Baalbek,Bekaa,Baalbek
+Protection,Tracing,10,10/21/2015,Baalbek,Bekaa,Baalbek
+Protection,Detainees,7250,11/21/2015,Baalbek,Bekaa,Baalbek
+Assistance,NFI,34704,02/26/2014,Nabatiyeh,El Nabatiyeh,Nabatiyeh
+Assistance,drugs,369216,09/14/2015,Nabatiyeh,El Nabatiyeh,Nabatiyeh
+Protection,RCM,1846,09/21/2015,Nabatiyeh,El Nabatiyeh,Nabatiyeh
+Assistance,Food,31468,02/26/2014,North,North,North
+Assistance,Food,31468,02/26/2014,North,North,North
+Assistance,Cash,16020,03/13/2014,North,North,North
+Assistance,WatHab,384107,03/13/2014,North,North,North
+Assistance,Healthcare,421,02/13/2014,North,North,North
+Assistance,Weapon Wounded,20,04/13/2015,North,North,North
+Assistance,Weapon Wounded,20,04/13/2015,North,North,North
+Assistance,Rehabilitation,102,02/26/2014,North,North,North
+Assistance,Food,31468,02/26/2014,South,South,South
+Assistance,Agriculture,95,02/14/2014,South,South,South
+Assistance,Cash,6725,02/14/2015,South,South,South
+Assistance,WatHab,321249,02/14/2015,South,South,South
+Assistance,Healthcare,38,02/14/2015,South,South,South
+Assistance,Weapon Wounded,128,08/14/2015,South,South,South
+Assistance,Rehabilitation,298,02/14/2015,South,South,South
