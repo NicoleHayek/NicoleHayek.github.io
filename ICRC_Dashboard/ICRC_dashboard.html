@@ -122,6 +122,7 @@ d3.json("admin1_map.json", function (statesJson) {
           .overlayGeoJson(statesJson.features, "state", function (d) {
               return d.properties.Moh_NA_I;
           })
+        .projection(d3.geo.mercator().center([38.1,33.5]).scale(8000));
 
  AreaChart
           .width(350)
