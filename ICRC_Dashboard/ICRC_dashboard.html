@@ -14,15 +14,6 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <style>
-    #reachbar {
-    width: 100%;
-    height: 30px;
-    bottom: 0px;
-    background-color: #58585A;
-    position: relative;
-}
-    </style>
 </head>
 <body>
   
@@ -65,7 +56,7 @@
         <div id="Activity"><h5><b>Type of Activity Provided</b></h5></div>
       </div>
       <div class="col-md-4">
-        <div id ="Beneficiary"><h5><b>Activities/Beneficiaries</b></h5></div>
+        <div id ="map"><h5></h5></div>
       </div>
     </div>
 
@@ -73,13 +64,6 @@
 
   </div> <!-- /container -->
 </br>
-
-        <!--<div id="reachbar"></div>-->
-
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-  
 
 </body>
 
@@ -101,7 +85,8 @@ var TypeChart      		= dc.rowChart("#Type",groupname),
     DateChart           = dc.lineChart("#Date", groupname),
     BeneficiaryChart    = dc.rowChart("#Beneficiary", groupname),
 	AreaChart			= dc.pieChart("#Gov", groupname),
-	GovChart			= dc.rowChart("#Area", groupname);
+	GovChart			= dc.rowChart("#Area", groupname),
+	mapChart			= dc.geoChoroplethChart("#map",groupname);
 
 d3.csv("ICRC_Dashboard_test.csv", function(error, experiments) {
 
@@ -121,9 +106,22 @@ var ndx                  = crossfilter(experiments),
       BeneficiaryGroup   = BeneficiaryDim.group().reduceSum(function (d) { return +d.Beneficiary; }),
 	  AreaDimension		 = ndx.dimension(function(d) {return d.Gov;}),
 	  AreaGroup			 = AreaDimension.group(),
-	  GovDimension		 = ndx.dimension(function(d) {return d.Area;});
-	  GovGroup			 = GovDimension.group().reduceSum(function (d) { return +d.Beneficiary; });
+	  GovDimension		 = ndx.dimension(function(d) {return d.Area;}),
+	  GovGroup			 = GovDimension.group().reduceSum(function (d) { return +d.Beneficiary; }),
+	  MapDim       		 = ndx.dimension(function(d) {return d.Name_1;}),
+      MapGroup     		 = MapDim.group();
       
+d3.json("admin1_map.geojson", function (statesJson) {
+
+  mapChart.width(300)
+          .height(700)
+          .dimension(MapDim)
+          .group(MapGroup)
+          .colors(['#E2F2FF','#C4E4FF','#9ED2FF','#81C5FF','#6BBAFF','#51AEFF','#36A2FF'])
+          .colorDomain([0, 500])
+          .overlayGeoJson(statesJson.features, "state", function (d) {
+              return d.properties.Moh_NA_I;
+          })
 
  AreaChart
           .width(350)
@@ -219,6 +217,7 @@ $('#reset').on('click', function (){
   dc.renderAll(groupname);
   });
 
+   });
 </script>
 
 </body>
