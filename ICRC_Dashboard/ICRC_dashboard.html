@@ -89,7 +89,7 @@ var TypeChart      		= dc.rowChart("#Type",groupname),
 	mapChart			= dc.geoChoroplethChart("#map",groupname);
 
 d3.csv("ICRC_Dashboard_test.csv", function(error, experiments) {
-
+  console.log(experiments);
   var dateformat = d3.time.format('%m/%d/%Y');
 
 experiments.forEach(function (d) {
@@ -112,7 +112,7 @@ var ndx                  = crossfilter(experiments),
       MapGroup     		 = MapDim.group();
       
 d3.json("admin1_map.json", function (statesJson) {
-
+console.log(statesJson);
   mapChart.width(300)
           .height(700)
           .dimension(MapDim)
