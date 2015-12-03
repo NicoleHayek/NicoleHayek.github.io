@@ -113,12 +113,12 @@ var ndx                  = crossfilter(experiments),
       
 d3.json("admin1_map.json", function (statesJson) {
 console.log(statesJson);
-  mapChart.width(300)
+  mapChart.width(400)
           .height(700)
           .dimension(MapDim)
           .group(MapGroup)
           .colors(['#E2F2FF','#C4E4FF','#9ED2FF','#81C5FF','#6BBAFF','#51AEFF','#36A2FF'])
-          .colorDomain([0, 500])
+          .colorDomain([0, 10])
           .overlayGeoJson(statesJson.features, "state", function (d) {
               return d.properties.Moh_NA_I;
           })
