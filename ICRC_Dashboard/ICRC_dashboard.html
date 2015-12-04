@@ -87,7 +87,7 @@ var TypeChart      		= dc.rowChart("#Type",groupname),
 	AreaChart			= dc.pieChart("#Gov", groupname),
 	GovChart			= dc.rowChart("#Area", groupname),
 	mapChart			= dc.geoChoroplethChart("#map",groupname);
-
+	
 d3.csv("ICRC_Dashboard_test.csv", function(error, experiments) {
   console.log(experiments);
   var dateformat = d3.time.format('%m/%d/%Y');
@@ -113,8 +113,8 @@ var ndx                  = crossfilter(experiments),
       
 d3.json("admin1_map.json", function (statesJson) {
 console.log(statesJson);
-  mapChart.width(400)
-          .height(700)
+  mapChart.width(300)
+          .height(1000)
           .dimension(MapDim)
           .group(MapGroup)
           .colors(['#E2F2FF','#C4E4FF','#9ED2FF','#81C5FF','#6BBAFF','#51AEFF','#36A2FF'])
@@ -122,7 +122,7 @@ console.log(statesJson);
           .overlayGeoJson(statesJson.features, "state", function (d) {
               return d.properties.Moh_NA_I;
           })
-        .projection(d3.geo.mercator().center([38.1,33.5]).scale(8000));
+        .projection(d3.geo.mercator().center([37.8,34.0]).scale(10000));
 
  AreaChart
           .width(350)
@@ -217,7 +217,7 @@ $('#reset').on('click', function (){
 //  dc.renderAll();
   dc.renderAll(groupname);
   });
-
+  
    });
 </script>
 
