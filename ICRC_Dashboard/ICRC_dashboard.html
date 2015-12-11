@@ -105,7 +105,7 @@ electricity)</i> and <b>resources</b>.</p>
 
 var groupname = "marker-select";
 
-var TypeChart      		= dc.rowChart("#Type",groupname),
+var TypeChart      	= dc.rowChart("#Type",groupname),
     ActivityChart       = dc.pieChart("#Activity",groupname),
     DateChart           = dc.lineChart("#Date", groupname),
     BeneficiaryChart    = dc.rowChart("#Beneficiary", groupname),
@@ -218,8 +218,8 @@ console.log(statesJson);
           .xAxis().ticks(5);
 		  
   BeneficiaryChart
-		.width(350)
-		.height(550)
+	.width(350)
+	.height(550)
         .dimension(BeneficiaryDim)
         .group(BeneficiaryGroup)
          // .stack(governoratesByHousehold)
