@@ -1,31 +1,31 @@
-Type, Activity, Beneficiary, Date, Area, Name_1, Gov
-Protection, Tracing, 75, 09/21/2015, Palestinian Refugees, Bekaa, Baalbek
-Protection, Detainees, 6943, 10/21/2015, Syrian Refugees/WW, Bekaa, Baalbek
-Protection, RCM, 40445, 10/21/2015, Syrian Refugees/WW, Bekaa, Baalbek
-Protection, Tracing, 10, 10/21/2015, Syrian Refugees/WW, Bekaa, Baalbek
-Protection, Detainees, 7250, 11/21/2015, Syrian Refugees/WW, Bekaa, Baalbek
-Assistance, NFI, 34704, 02/26/2014, Vulnerable Lebanese, El Nabatiyeh, Nabatiyeh
-Assistance, drugs, 369216, 09/14/2015, Vulnerable Lebanese, El Nabatiyeh, Nabatiyeh
-Protection, RCM, 1846, 09/21/2015, Vulnerable Lebanese, El Nabatiyeh, Nabatiyeh
-Assistance, Food, 31468, 02/26/2014, Vulnerable Lebanese, North, Akkar
-Assistance, Healthcare, 421, 02/13/2014, Vulnerable Lebanese, North, Akkar
-Assistance, Healthcare, 421, 02/13/2014, Vulnerable Lebanese, North, Akkar
-Assistance, drugs, 396657, 02/26/2015, Syrian Refugees/WW, North, Akkar
-Assistance, Food, 30000, 02/26/2015, Syrian Refugees/WW, North, Akkar
-Assistance, NFI, 15000, 02/26/2015, Syrian Refugees/WW, North, Akkar
-Assistance, Agriculture, 15000, 02/26/2014, Syrian Refugees/WW, North, Akkar
-Assistance, Food, 31468, 02/26/2014, Detainees, North, North
-Assistance, Food, 31468, 02/26/2014, Detainees, North, North
-Assistance, Cash, 16020, 03/13/2014, Detainees, North, North
-Assistance, WatHab, 384107, 03/13/2014, Detainees, North, North
-Assistance, Healthcare, 421, 02/13/2014, Detainees, North, North
-Assistance, Weapon Wounded, 20, 04/13/2015, Detainees, North, North
-Assistance, Weapon Wounded, 20, 04/13/2015, Detainees, North, North
-Assistance, Rehabilitation, 102, 02/26/2014, Detainees, North, North
-Assistance, Food, 31468, 02/26/2014, Palestinian Refugees, South, South
-Assistance, Agriculture, 95, 02/14/2014, Palestinian Refugees, South, South
-Assistance, Cash, 6725, 02/14/2015, Palestinian Refugees, South, South
-Assistance, WatHab, 321249, 02/14/2015, Palestinian Refugees, South, South
-Assistance, Healthcare, 38, 02/14/2015, Palestinian Refugees, South, South
-Assistance, Weapon Wounded, 128, 08/14/2015, Palestinian Refugees, South, South
-Assistance, Rehabilitation, 298, 02/14/2015, Palestinian Refugees, South, South
+Type;Activity;Beneficiary;Date;Area;Name_1;Gov;Town
+Protection;Tracing;75;09/21/2015;Palestinian Refugees;Bekaa;Baalbek;Aarsal
+Protection;Detainees;6943;10/21/2015;Syrian Refugees/WW;Bekaa;Baalbek;Aarsal
+Protection;Detainees;40445;10/21/2015;Syrian Refugees/WW;Bekaa;Baalbek;Aarsal
+Protection;Detainees;10;10/21/2015;Syrian Refugees/WW;Bekaa;Baalbek;Moqraq
+Protection;Detainees;7250;11/21/2015;Syrian Refugees/WW;Bekaa;Baalbek;Moqraq
+Assistance;Relief Assistance;34704;02/26/2014;Vulnerable Lebanese;El Nabatiyeh;Nabatiyeh;Ain Tanta
+Assistance;Rehabilitation;369216;09/14/2015;Vulnerable Lebanese;El Nabatiyeh;Nabatiyeh;Chebaa
+Protection;RCM;1846;09/21/2015;Vulnerable Lebanese;El Nabatiyeh;Nabatiyeh;Chebaa
+Assistance;Relief Assistance;31468;02/26/2014;Vulnerable Lebanese;North;Akkar;Ain Yaaqoub
+Assistance;Healthcare;421;02/13/2014;Vulnerable Lebanese;North;Akkar;Ain Yaaqoub
+Assistance;Healthcare;421;02/13/2014;Vulnerable Lebanese;North;Akkar;Halba
+Assistance;drugs;396657;02/26/2015;Syrian Refugees/WW;North;Akkar;Halba
+Assistance;Relief Assistance;30000;02/26/2015;Syrian Refugees/WW;North;Akkar;Semmaqiye
+Assistance;Relief Assistance;15000;02/26/2015;Syrian Refugees/WW;North;Akkar;Semmaqiye
+Assistance;Relief Assistance;15000;02/26/2014;Syrian Refugees/WW;North;Akkar;Semmaqiye
+Assistance;Relief Assistance;31468;02/26/2014;Detainees;North;North;Tabbaneh
+Assistance;Relief Assistance;31468;02/26/2014;Detainees;North;North;Tabbaneh
+Assistance;Rehabilitation;16020;03/13/2014;Detainees;North;North;Tabbaneh
+Assistance;Rehabilitation;384107;03/13/2014;Detainees;North;North;Tabbaneh
+Assistance;Healthcare;421;02/13/2014;Detainees;North;North;Bnehrane
+Assistance;Weapon Wounded;20;04/13/2015;Detainees;North;North;Bnehrane
+Assistance;Weapon Wounded;20;04/13/2015;Detainees;North;North;Tabbaneh
+Assistance;Rehabilitation;102;02/26/2014;Detainees;North;North;Bkeftine
+Assistance;Relief Assistance;31468;02/26/2014;Palestinian Refugees;South;South;Rachidiye
+Assistance;Agriculture;95;02/14/2014;Palestinian Refugees;South;South;Rachidiye
+Assistance;Relief Assistance;6725;02/14/2015;Palestinian Refugees;South;South;Ain el Hiloue
+Assistance;WatHab;321249;02/14/2015;Palestinian Refugees;South;South;Ain el Hiloue
+Assistance;Healthcare;38;02/14/2015;Palestinian Refugees;South;South;Ain el Hiloue
+Assistance;Weapon Wounded;128;08/14/2015;Palestinian Refugees;South;South;Ain el Hiloue
+Assistance;Rehabilitation;298;02/14/2015;Palestinian Refugees;South;South;Ain el Hiloue
