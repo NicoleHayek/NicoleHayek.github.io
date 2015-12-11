@@ -109,9 +109,9 @@ var TypeChart      		= dc.rowChart("#Type",groupname),
     ActivityChart       = dc.pieChart("#Activity",groupname),
     DateChart           = dc.lineChart("#Date", groupname),
     BeneficiaryChart    = dc.rowChart("#Beneficiary", groupname),
-	AreaChart			= dc.pieChart("#Gov", groupname),
-	GovChart			= dc.rowChart("#Area", groupname),
-	mapChart			= dc.geoChoroplethChart("#map",groupname);
+    AreaChart		= dc.pieChart("#Gov", groupname),
+    GovChart		= dc.rowChart("#Area", groupname),
+    mapChart		= dc.geoChoroplethChart("#map",groupname);
 	
 d3.csv("ICRC_Dashboard_test.csv", function(error, experiments) {
   console.log(experiments);
@@ -129,12 +129,12 @@ var ndx                  = crossfilter(experiments),
       DateGroup          = DateDimension.group(),
       BeneficiaryDim     = ndx.dimension(function(d) {return d.Activity;}),
       BeneficiaryGroup   = BeneficiaryDim.group().reduceSum(function (d) { return +d.Beneficiary; }),
-	  AreaDimension		 = ndx.dimension(function(d) {return d.Gov;}),
-	  AreaGroup			 = AreaDimension.group(),
-	  GovDimension		 = ndx.dimension(function(d) {return d.Area;}),
-	  GovGroup			 = GovDimension.group().reduceSum(function (d) { return +d.Beneficiary; }),
-	  MapDim       		 = ndx.dimension(function(d) {return d.Name_1;}),
-      MapGroup     		 = MapDim.group();
+      AreaDimension	 = ndx.dimension(function(d) {return d.Gov;}),
+      AreaGroup	 	 = AreaDimension.group(),
+      GovDimension	 = ndx.dimension(function(d) {return d.Area;}),
+      GovGroup	 	 = GovDimension.group().reduceSum(function (d) { return +d.Beneficiary; }),
+      MapDim             = ndx.dimension(function(d) {return d.Name_1;}),
+      MapGroup      	 = MapDim.group();
       
 d3.json("admin1_map.json", function (statesJson) {
 console.log(statesJson);
@@ -156,15 +156,15 @@ console.log(statesJson);
           //.colors(['#EE5859'])
           //.colorDomain([0,0])
           .innerRadius(50)
-		  .renderLabel(true)
+	  .renderLabel(true)
           .ordering(function (p) { return -p.value;})
           .dimension(AreaDimension)
           .group(AreaGroup)
           //.legend(dc.legend());
 		  
   GovChart
-		  .width(350)
-		  .height(230)
+	  .width(350)
+	  .height(230)
           .dimension(GovDimension)
           .group(GovGroup)
          // .stack(governoratesByHousehold)
