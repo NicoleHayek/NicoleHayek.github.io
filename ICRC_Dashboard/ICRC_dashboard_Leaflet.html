@@ -1,0 +1,259 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+    <title>ICRC dashboard Leaflet Test - Lebanon</title>
+
+    <!-- Bootstrap -->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+    <link type="text/css" href="css/leaflet.css" rel="stylesheet"/>
+    <link type="text/css" href="css/leaflet.markercluster.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" type="text/css" href="css/dc.css">
+    <!-- Add IntroJs styles  -->
+    <link rel="stylesheet" type="text/css" href="css/introjs.css">
+    <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+
+
+<body>
+  <script type="text/javascript">
+function toggle(el) {
+  document.getElementById(el).style.display
+    = (document.getElementById(el).style.display == "none") ? "block" : "none";
+// could substitute 'inline' for 'block' in above line
+  return false;
+}
+window.onload = function() {
+  var sel = document.getElementsByClassName('answers');
+  for (var i=0; i<sel.length; i++) { sel[i].style.display = 'none'; }
+}
+</script>
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+      </ul>
+      <ul class="nav navbar-nav navbar-left">
+        <li style="top:6px"><img name="onetidHeadbnnr0" src="image/2000px-Emblem_of_the_ICRC.svg.png" width="40" height="40"  widhtalt="Page d'accueil" style="border-width:0px;"><li>
+		  <a class="navbar-brand" href="#"><b><font color=#b21d1d >&nbsp;&nbsp;&nbsp;&nbsp;ICRC Overall activities in Lebanon</font></b></a>
+	      </ul>
+		  <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><i><font color=#b21d1d >Source: Movement Regional Data for the Syrian Crisis (edited)</font></i></a></li>
+		</ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+ <div  data-step="7" data-intro="Click on the map to filter by site" data-position="left">
+<div class="col-md-4">
+<p><small><i>Click/Zoom on the map to filter sites</i></small></p>
+ <div  class="map" id="cccm"  > </div>
+ <h5 id="map">Map: Location of the ICRC projects throughout 2015 in Lebanon</h5>
+ <br>
+ <div id="dcontent" style="width:100%; background-color: #E2E2FC; padding-left: 5px"></div>
+<a class="reset btn btn-primary btn-sm" id="reset" href="#">Reset All</a>&nbsp;&nbsp;<a class="reset btn btn-primary btn-sm" id="data" href="ICRC_Dashboard_leaflet.xls">Download the Data</a>
+</div>
+ </div>
+    <div style="display: block;" class="container" id="dashboard">
+            <div class="row" id="cccm">
+			<div class="row">
+<div class="col-md-4">   
+       <div class="row">
+			<h3 id="key_stats_title"><b>Targeted Population in Lebanon:</b></h3>
+			<div class="col-md-4"> 
+			<h3 id="Pal_Nbr"><b><font color=#b21d1d >1,200,000</font></b></h3><h5 id="Pal_text">Syrian Refugee</h5>
+			</div>
+			<div class="col-md-4"> 
+			<h3 id="Pal_Nbr"><b><font color=#b21d1d >1,000,000</font></b></h3><h5 id="Pal_text">Vulnerable Lebanese</h5>
+			</div>
+			<div class="col-md-4"> 
+			<h3 id="Pal_Nbr"><b><font color=#b21d1d >400,000</font></b></h3><h5 id="Pal_text">Palestinian Refugee</h5>
+			</div>
+<br>
+  <h4>ICRC Beneficiaries Assisted progress chart</h4>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:68%">
+      <span class="sr-only">70% Complete</span>
+  </div>
+</div>          
+<h3 id="key_stats_title"><b>General Overview</b></h3>
+<p><small><i>Click on title for detailed info</i></small></p>
+<a href="#" onclick="return toggle('txt')">Lebanon General Situation</a><br>
+<div id="txt" class="answers">The government formed in March 2014 remains the only functioning
+power in the country in the continued absence of a president and amidst a total paralysis of
+parliament. Yet, while the cabinet has tried to maintain its unison for the sake of economic
+and security stability, signs of discord begin to emerge threatening to paralyze the only body
+currently approving laws and decrees, therefore threatening the smooth running of the humanitarian
+response. Regional developments, in particular the ongoing armed conflict in Syria, continue to
+impinge on the fragile political landscape. In the eastern-border town of Arsal, the army maintains
+an intermittent presence as negotiations to free the security personnel held captive by Jabhat al 
+Nusra and the Islamic State group since the clashes last August have yet to yield results.</div>
+
+
+<a href="#" onclick="return toggle('txt1')">Ein El Helwe General Overview</a><br>
+<div id="txt1" class="answers"><p>Ein el Helwe camp is the largest Palestinian refugee camp in Lebanon (established
+by <font color=#b21d1d ><b>ICRC</b></font> in 1948) to accommodate 10,000 refugees from northern Palestine.
+The UNRWA’s estimated population of the camp (registered refugees) is around
+60,000 individuals. Even though other sources indicate that this "lawless zone"
+hosts a much larger population. In addition, 6'000/7'000 Palestinians fleeing
+from Syria are contributing to the camps' <b>overcrowding</b>, the <b>struggle for
+scarce basic services</b> <i>(education, water, health care, sanitation,housing and
+electricity)</i> and <b>resources</b>.</p></div>
+
+<a href="#" onclick="return toggle('txt2')">Wounded and Sick</a><br>
+<div id="txt2" class="answers">Wounded and sick people, including refugees, have timely and unhindered
+access to adequate medical and surgical services during emergencies arising from armed conflict or other
+situations of violence. As the ICRC’s main partner, the National Society received financial/material
+support for its core services (see Red Cross and Red Crescent Movement) and activities. The support
+contributed to the basic treatment, including first aid and referral, of 8’903 Wounded and Sick people
+to health facilities for treatment as well as blood transfusion for 1’666 Syrian and Lebanese patients. </div>
+<div class ="Area" id="NEH" class ="dc-chart"><h5><b>Type of Beneficiaries Assisted</b></h5></div>
+<div class ="Date" id="NEH" class ="dc-chart"><h5><b>Activities Over Time by beneficiary</b></h5></div>
+
+ </div>  
+		</div>
+
+    </div>
+	</div>
+    </div>
+	</div>
+
+
+    <script type="text/javascript" src="js/intro.js"></script>
+    <script type="text/javascript" src="js/d3_002.js"></script>
+    <script type="text/javascript" src="js/d3.js"></script>
+    <script type="text/javascript" src="js/crossfilter.js"></script>
+    <script type="text/javascript" src="js/dc.js"></script>
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+
+<!--maps-->
+    <script type="text/javascript" src="js/leaflet.js"></script>
+    <script type="text/javascript" src="js/leaflet.markercluster.js"></script>
+    <script type="text/javascript" src="js/dc.leaflet.js"></script>
+
+
+<script type="text/javascript">
+
+/*     Markers      */
+//var numberFormat = d3.format(",f");
+var groupname = "marker-select";
+
+
+d3.tsv("ICRC_Dashboard_leaflet.txt", function(data) {
+ // drawMarkerSelect(data);
+  drawMarkerArea(data);
+});
+
+
+function regroup(dim, cols) {
+    var _groupAll = dim.groupAll().reduce(
+        function(p, v) { // add
+            cols.forEach(function(c) {
+                p[c] += v[c];
+            });
+            return p;
+        },
+        function(p, v) { // remove
+            cols.forEach(function(c) {
+                p[c] -= v[c];
+            });
+            return p;
+        },
+        function() { // init
+            var p = {};
+            cols.forEach(function(c) {
+                p[c] = 0;
+            });
+            return p;
+        });
+    return {
+        all: function() {
+            // or _.pairs, anything to turn the object into an array
+            return d3.map(_groupAll.value()).entries();
+        }
+    };
+}
+
+
+
+function drawMarkerArea(data) {
+//function drawMarkerSelect(data) {
+
+
+  var xf = crossfilter(data);
+
+
+  var groupname = "marker-select";
+
+  var location = xf.dimension(function(d) { return d.geo; });
+  var locationGroup = location.group();
+
+
+  
+  dc.leafletMarkerChart(".map",groupname)
+      .dimension(location)
+      .group(locationGroup)
+      //.width(200)
+      //.height(1000)
+      .center([33.897619, 35.871615])
+      .zoom(9)
+      .cluster(true)
+      .renderPopup(true)
+      .filterByArea(true);
+var BenefDim = xf.dimension(function(d) {return d['Area'];});
+var BenefGroup  = BenefDim.group().reduceSum(function (d) { return +d.Beneficiary; });
+dc.rowChart (".Area",groupname)
+	  .width(350)
+	  .height(200)
+      .dimension(BenefDim)
+      .group(BenefGroup)
+   // .stack(governoratesByHousehold)
+   // .elasticX(true)
+      .renderLabel(true)
+      .ordering(function (p) { return -p.value;})
+      .colors(['#3182bd'])
+      .colorDomain([0,0])
+      .colorAccessor(function(d, i){return 1;})
+      .xAxis().ticks(4).tickFormat(d3.format("s"));
+
+
+
+
+$('#reset').on('click', function (){
+  dc.filterAll(groupname);
+  dc.redrawAll(groupname);
+  return false;
+})
+
+
+  dc.renderAll(groupname);
+}
+
+</script>
+
+</body>
+
+
+</html>
