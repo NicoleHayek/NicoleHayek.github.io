@@ -10,12 +10,17 @@
     <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
     <link type="text/css" href="css/leaflet.css" rel="stylesheet"/>
     <link type="text/css" href="css/leaflet.markercluster.css" rel="stylesheet"/>
-
+	<style type='text/css'>
+	html, body {height: 100%; margin: 0}
+	#left {width: 17%; height: 775px;float: left;}
+	#right {width: 12%; height: 775px; border: 2px solid red;; float: right;}
+	</style>
     <link rel="stylesheet" type="text/css" href="css/dc.css">
     <!-- Add IntroJs styles  -->
     <link rel="stylesheet" type="text/css" href="css/introjs.css">
     <link rel="stylesheet" type="text/css" href="css/dashboard.css">
     <link href="css/stylish-portfolio.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/site.css"/>
     <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
   <meta charset="utf-8">
@@ -25,8 +30,8 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 
-
 <body>
+
   <script type="text/javascript">
 function toggle(el) {
   document.getElementById(el).style.display
@@ -59,50 +64,55 @@ window.onload = function() {
         <li style="top:6px"><img name="onetidHeadbnnr0" src="image/2000px-Emblem_of_the_ICRC.svg.png" width="40" height="40"  widhtalt="Page d'accueil" style="border-width:0px;"><li>
 		  <a class="navbar-brand" href="#"><b><font color=#b21d1d >&nbsp;&nbsp;&nbsp;&nbsp;ICRC Overall activities in Lebanon</font></b></a>
 	      </ul>
-		  <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><i><font color=#b21d1d >Source: Movement Regional Data for the Syrian Crisis (edited)</font></i></a></li>
-		</ul>
+
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
 
-<div style="display: block;" class="container" id="dashboard">
-  <div class="row" id="cccm">
-	
-      <div  data-step="7" data-intro="Click on the map to filter by site" data-position="left">
-        <div class="col-md-7">
-          <p><small><i>Click/Zoom on the map to filter sites</i></small></p>
-            <div  class="map" id="cccm"  > </div>
-              <h5 id="map">Map: Location of the ICRC projects throughout 2015 in Lebanon</h5>
-              <br>
-              <div id="dcontent" style="width:100%; background-color: #E2E2FC; padding-left: 5px"></div>
-              <a class="reset btn btn-primary btn-sm" id="reset" href="#">Reset All</a>&nbsp;&nbsp;<a class="reset btn btn-primary btn-sm" id="data" href="ICRC_Dashboard_leaflet.xls">Download the Data</a>
-            </div>
-          </div>
+<div id='left'>
+			<h3 id="key_stats_title"><b>General Overview of Lebanon:</b></h3>
+			<div class="col-md-4"> 
+			<h4 id="Pal_Nbr"><b><font color=#b21d1d >1,200,000</font></b></h4><h5 id="Pal_text">Syrian Refugee</h5>
+			</div>
+			<div class="col-md-4"> 
+			<h4 id="Pal_Nbr"><b><font color=#b21d1d >1,000,000</font></b></h4><h5 id="Pal_text">Vulnerable Lebanese</h5>
+			</div>
+			<div class="col-md-4"> 
+			<h4 id="Pal_Nbr"><b><font color=#b21d1d >400,000</font></b></h4><h5 id="Pal_text">Palestinian Refugee</h5>
+			</div>
+			<p><b><font color=#7F7F7F >&nbsp;&nbsp;&nbsp;&nbsp;--------------------------------------------------</font></b></p>	
+			<p>•	No president for the past 1.5 years<br/>
+•	Large and dramatic Syrian and Palestinian refugee presence <br/>
+•	Absence of a Sunni community leader to address their needs and fears <br/>
+•	Persistent military commitment of Hezbollah in Syria <br/>
+•	Poor condition of places of detention <br/>
+•	Mass migration of Lebanese, Syrian and Palestinian citizens to Turkey
+</p>
+</div>
+<div id='right'>
+			<h3 id="key_stats_title"><b>Red Cross / Red Crescent Movement:</b></h3>
+</div>
+<div class ="container" id="dashboard">
+<div class="row" id="cccm">
 
-
+ <div  data-step="7" data-intro="Click on the map to filter by site" data-position="left">
+<div class="col-md-7">
+ <h5 id="maptext"><b>Map: Location of the ICRC projects throughout 2015 in Lebanon</b></h5>
+ <div  class="map" id="cccm"  > </div>
+ <p><small><i>Click/Zoom on the map to filter sites</i></small></p>
+ <br>
+ <div id="dcontent" style="width:100%; background-color: #E2E2FC; padding-left: 5px"></div>
+<a class="reset btn btn-primary btn-sm" id="reset" href="#">Reset All</a>&nbsp;&nbsp;<a class="reset btn btn-primary btn-sm" id="data" href="ICRC_Dashboard_leaflet.xls">Download the Data</a>
+</div>
+ </div>
+    <div style="display: block;" class="container" id="dashboard">
+            <div class="row" id="cccm">
+			<div class="row">
 <div class="col-md-4">   
-       <div class="row">
-			<h3 id="key_stats_title"><b>Targeted Population in Lebanon:</b></h3>
-			<div class="col-md-4"> 
-			<h3 id="Pal_Nbr"><b><font color=#b21d1d >1,200,000</font></b></h3><h5 id="Pal_text">Syrian Refugee</h5>
-			</div>
-			<div class="col-md-4"> 
-			<h3 id="Pal_Nbr"><b><font color=#b21d1d >1,000,000</font></b></h3><h5 id="Pal_text">Vulnerable Lebanese</h5>
-			</div>
-			<div class="col-md-4"> 
-			<h3 id="Pal_Nbr"><b><font color=#b21d1d >400,000</font></b></h3><h5 id="Pal_text">Palestinian Refugee</h5>
-			</div>
-<br>
-  <h4>ICRC Beneficiaries Assisted progress chart</h4>
-  <div class="progress">
-    <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:68%">
-      <span class="sr-only">70% Complete</span>
-  </div>
-</div>          
+       <div class="row">     
 <h3 id="key_stats_title"><b>General Overview</b></h3>
 <p><small><i>Click on title for detailed info</i></small></p>
-<a href="#" onclick="return toggle('txt')">Lebanon General Situation</a><br>
+<a href="#" onclick="return toggle('txt')">Syrian Refugees/WW</a><br>
 <div id="txt" class="answers">The government formed in March 2014 remains the only functioning
 power in the country in the continued absence of a president and amidst a total paralysis of
 parliament. Yet, while the cabinet has tried to maintain its unison for the sake of economic
@@ -114,7 +124,7 @@ an intermittent presence as negotiations to free the security personnel held cap
 Nusra and the Islamic State group since the clashes last August have yet to yield results.</div>
 
 
-<a href="#" onclick="return toggle('txt1')">Ein El Helwe General Overview</a><br>
+<a href="#" onclick="return toggle('txt1')">Vulnerable Lebanese</a><br>
 <div id="txt1" class="answers"><p>Ein el Helwe camp is the largest Palestinian refugee camp in Lebanon (established
 by <font color=#b21d1d ><b>ICRC</b></font> in 1948) to accommodate 10,000 refugees from northern Palestine.
 The UNRWA’s estimated population of the camp (registered refugees) is around
@@ -124,15 +134,26 @@ from Syria are contributing to the camps' <b>overcrowding</b>, the <b>struggle f
 scarce basic services</b> <i>(education, water, health care, sanitation,housing and
 electricity)</i> and <b>resources</b>.</p></div>
 
-<a href="#" onclick="return toggle('txt2')">Wounded and Sick</a><br>
+<a href="#" onclick="return toggle('txt2')">Palestinian Refugees</a><br>
 <div id="txt2" class="answers">Wounded and sick people, including refugees, have timely and unhindered
 access to adequate medical and surgical services during emergencies arising from armed conflict or other
 situations of violence. As the ICRC’s main partner, the National Society received financial/material
 support for its core services (see Red Cross and Red Crescent Movement) and activities. The support
 contributed to the basic treatment, including first aid and referral, of 8’903 Wounded and Sick people
 to health facilities for treatment as well as blood transfusion for 1’666 Syrian and Lebanese patients. </div>
+
+<a href="#" onclick="return toggle('txt3')">Detainees</a><br>
+<div id="txt3" class="answers">The government formed in March 2014 remains the only functioning
+power in the country in the continued absence of a president and amidst a total paralysis of
+parliament. Yet, while the cabinet has tried to maintain its unison for the sake of economic
+and security stability, signs of discord begin to emerge threatening to paralyze the only body
+currently approving laws and decrees, therefore threatening the smooth running of the humanitarian
+response. Regional developments, in particular the ongoing armed conflict in Syria, continue to
+impinge on the fragile political landscape. In the eastern-border town of Arsal, the army maintains
+an intermittent presence as negotiations to free the security personnel held captive by Jabhat al 
+Nusra and the Islamic State group since the clashes last August have yet to yield results.</div>
 <div class ="Area" id="NEH" class ="dc-chart"><h5><b>Type of Beneficiaries Assisted</b></h5></div>
-<div class ="Date" id="NEH" class ="dc-chart"><h5><b>Activities Over Time by beneficiary</b></h5></div>
+<div class ="Cost" id="NEH" class ="dc-chart"><h5><b>Cost of Projects by Type of Activity</b></h5></div>
 
  </div>  
 		</div>
@@ -155,7 +176,6 @@ to health facilities for treatment as well as blood transfusion for 1’666 Syri
     <script type="text/javascript" src="js/leaflet.js"></script>
     <script type="text/javascript" src="js/leaflet.markercluster.js"></script>
     <script type="text/javascript" src="js/dc.leaflet.js"></script>
-
 
 <script type="text/javascript">
 
@@ -212,8 +232,6 @@ function drawMarkerArea(data) {
 
   var location = xf.dimension(function(d) { return d.geo; });
   var locationGroup = location.group();
-
-
   
   dc.leafletMarkerChart(".map",groupname)
       .dimension(location)
@@ -222,9 +240,13 @@ function drawMarkerArea(data) {
       //.height(1000)
       .center([33.897619, 35.871615])
       .zoom(9)
-      .cluster(true)
+	  .cluster(true)
+	  .filterByArea(true)
       .renderPopup(true)
-      .filterByArea(true);
+	  .popup(function(d,marker){
+	  return "<b>Project Name: </b>"+d.Area +"<br/><b> Project Type: </b>" +d.Area;});
+	  ;
+
 var BenefDim = xf.dimension(function(d) {return d['Area'];});
 var BenefGroup  = BenefDim.group().reduceSum(function (d) { return +d.Beneficiary; });
 dc.rowChart (".Area",groupname)
@@ -241,6 +263,21 @@ dc.rowChart (".Area",groupname)
       .colorAccessor(function(d, i){return 1;})
       .xAxis().ticks(4).tickFormat(d3.format("s"));
 
+var CostDim = xf.dimension(function(d) {return d['Activity'];});
+var CostGroup  = CostDim.group().reduceSum(function (d) { return +d.cost; });
+dc.rowChart (".Cost",groupname)
+	  .width(350)
+	  .height(350)
+      .dimension(CostDim)
+      .group(CostGroup)
+   // .stack(governoratesByHousehold)
+   // .elasticX(true)
+      .renderLabel(true)
+      .ordering(function (p) { return -p.value;})
+      .colors(['#3182bd'])
+      .colorDomain([0,0])
+      .colorAccessor(function(d, i){return 1;})
+      .xAxis().ticks(4).tickFormat(d3.format("s"));
 
 
 
