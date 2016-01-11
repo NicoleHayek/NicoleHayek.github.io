@@ -1,31 +1,31 @@
-Activity	Beneficiary	Date	Area	Name_1	Gov	Town	geo	picture
-Tracing	75	09/21/2015	Palestinian Refugees	Bekaa	Baalbek	Aarsal	"34.1792360000001,36.4195920000001,1407"	@Lebanon.jpg
-Detainees	6943	10/21/2015	Syrian Refugees/WW	Bekaa	Baalbek	Aarsal	"34.1792360000001,36.4195920000001,1407"	@Lebanon.jpg
-Detainees	40445	10/21/2015	Syrian Refugees/WW	Bekaa	Baalbek	Aarsal	"34.1792360000001,36.4195920000001,1407"	@Lebanon.jpg
-Detainees	10	10/21/2015	Syrian Refugees/WW	Bekaa	Baalbek	Moqraq	"34.1736030000001,36.334232,996"	@Lebanon.jpg
-Detainees	7250	11/21/2015	Syrian Refugees/WW	Bekaa	Baalbek	Moqraq	"34.1736030000001,36.334232,996"	@Lebanon.jpg
-Relief Assistance	34704	02/26/2014	Vulnerable Lebanese	El Nabatiyeh	Nabatiyeh	Ain Tanta	"33.412067,35.7257280000001,880"	@Lebanon.jpg
-Rehabilitation	369216	09/14/2015	Vulnerable Lebanese	El Nabatiyeh	Nabatiyeh	Chebaa	"33.3490580000001,35.7486890000001,1288"	@Lebanon.jpg
-RCM	1846	09/21/2015	Vulnerable Lebanese	El Nabatiyeh	Nabatiyeh	Chebaa	"33.3490580000001,35.7486890000001,1288"	@Lebanon.jpg
-Relief Assistance	31468	02/26/2014	Vulnerable Lebanese	North	Akkar	Ain Yaaqoub	"34.519411,36.1977170000001,688"	@Lebanon.jpg
-Healthcare	421	02/13/2014	Vulnerable Lebanese	North	Akkar	Ain Yaaqoub	"34.519411,36.1977170000001,688"	@Lebanon.jpg
-Healthcare	421	02/13/2014	Vulnerable Lebanese	North	Akkar	Halba	"34.543328,36.077703,122"	@Lebanon.jpg
-drugs	396657	02/26/2015	Syrian Refugees/WW	North	Akkar	Halba	"34.543328,36.077703,122"	@Lebanon.jpg
-Relief Assistance	30000	02/26/2015	Syrian Refugees/WW	North	Akkar	Semmaqiye	"34.6395170000001,36.0023640000001,7"	@tree.jpg
-Relief Assistance	15000	02/26/2015	Syrian Refugees/WW	North	Akkar	Semmaqiye	"34.6395170000001,36.0023640000001,7"	@tree.jpg
-Relief Assistance	15000	02/26/2014	Syrian Refugees/WW	North	Akkar	Semmaqiye	"34.6395170000001,36.0023640000001,7"	@tree.jpg
-Relief Assistance	31468	02/26/2014	Detainees	North	North	Tabbaneh	"34.439561,35.8468110000001,20"	@tree.jpg
-Relief Assistance	31468	02/26/2014	Detainees	North	North	Tabbaneh	"34.439561,35.8468110000001,20"	@tree.jpg
-Rehabilitation	16020	03/13/2014	Detainees	North	North	Tabbaneh	"34.439561,35.8468110000001,20"	@tree.jpg
-Rehabilitation	384107	03/13/2014	Detainees	North	North	Tabbaneh	"34.439561,35.8468110000001,20"	@tree.jpg
-Healthcare	421	02/13/2014	Detainees	North	North	Bnehrane	"34.2745630000001,35.851169,557"	@tree.jpg
-Weapon Wounded	20	04/13/2015	Detainees	North	North	Bnehrane	"34.2745630000001,35.851169,557"	@tree.jpg
-Weapon Wounded	20	04/13/2015	Detainees	North	North	Tabbaneh	"34.439561,35.8468110000001,20"	@tree.jpg
-Rehabilitation	102	02/26/2014	Detainees	North	North	Bkeftine	"34.3847500000001,35.8611720000001,161"	@tree.jpg
-Relief Assistance	31468	02/26/2014	Palestinian Refugees	South	South	Rachidiye	"33.2379790000001,35.2175700000001,15"	@tree.jpg
-Agriculture	95	02/14/2014	Palestinian Refugees	South	South	Rachidiye	"33.2379790000001,35.2175700000001,15"	@tree.jpg
-Relief Assistance	6725	02/14/2015	Palestinian Refugees	South	South	Ain el Hiloue	"33.547451,35.384579,46"	@tree.jpg
-WatHab	321249	02/14/2015	Palestinian Refugees	South	South	Ain el Hiloue	"33.547451,35.384579,46"	@tree.jpg
-Healthcare	38	02/14/2015	Palestinian Refugees	South	South	Ain el Hiloue	"33.547451,35.384579,46"	@tree.jpg
-Weapon Wounded	128	08/14/2015	Palestinian Refugees	South	South	Ain el Hiloue	"33.547451,35.384579,46"	@tree.jpg
-Rehabilitation	298	02/14/2015	Palestinian Refugees	South	South	Ain el Hiloue	"33.547451,35.384579,46"	@tree.jpg
+Activity	Beneficiary	Date	Area	Name_1	Gov	Town	geo	cost
+Tracing	75	09/21/2015	Palestinian Refugees	Bekaa	Baalbek	Aarsal	"34.1792360000001,36.4195920000001,1407"	500
+Detainees	6943	10/21/2015	Syrian Refugees/WW	Bekaa	Baalbek	Aarsal	"34.1792360000001,36.4195920000001,1407"	600
+Detainees	40445	10/21/2015	Syrian Refugees/WW	Bekaa	Baalbek	Aarsal	"34.1792360000001,36.4195920000001,1407"	430
+Detainees	10	10/21/2015	Syrian Refugees/WW	Bekaa	Baalbek	Moqraq	"34.1736030000001,36.334232,996"	60
+Detainees	7250	11/21/2015	Syrian Refugees/WW	Bekaa	Baalbek	Moqraq	"34.1736030000001,36.334232,996"	150
+Relief Assistance	34704	02/26/2014	Vulnerable Lebanese	El Nabatiyeh	Nabatiyeh	Ain Tanta	"33.412067,35.7257280000001,880"	350
+Rehabilitation	369216	09/14/2015	Vulnerable Lebanese	El Nabatiyeh	Nabatiyeh	Chebaa	"33.3490580000001,35.7486890000001,1288"	550
+RCM	1846	09/21/2015	Vulnerable Lebanese	El Nabatiyeh	Nabatiyeh	Chebaa	"33.3490580000001,35.7486890000001,1288"	1000
+Relief Assistance	31468	02/26/2014	Vulnerable Lebanese	North	Akkar	Ain Yaaqoub	"34.519411,36.1977170000001,688"	670
+Healthcare	421	02/13/2014	Vulnerable Lebanese	North	Akkar	Ain Yaaqoub	"34.519411,36.1977170000001,688"	500
+Healthcare	421	02/13/2014	Vulnerable Lebanese	North	Akkar	Halba	"34.543328,36.077703,122"	600
+drugs	396657	02/26/2015	Syrian Refugees/WW	North	Akkar	Halba	"34.543328,36.077703,122"	430
+Relief Assistance	30000	02/26/2015	Syrian Refugees/WW	North	Akkar	Semmaqiye	"34.6395170000001,36.0023640000001,7"	60
+Relief Assistance	15000	02/26/2015	Syrian Refugees/WW	North	Akkar	Semmaqiye	"34.6395170000001,36.0023640000001,7"	150
+Relief Assistance	15000	02/26/2014	Syrian Refugees/WW	North	Akkar	Semmaqiye	"34.6395170000001,36.0023640000001,7"	350
+Relief Assistance	31468	02/26/2014	Detainees	North	North	Tabbaneh	"34.439561,35.8468110000001,20"	550
+Relief Assistance	31468	02/26/2014	Detainees	North	North	Tabbaneh	"34.439561,35.8468110000001,20"	1000
+Rehabilitation	16020	03/13/2014	Detainees	North	North	Tabbaneh	"34.439561,35.8468110000001,20"	670
+Rehabilitation	384107	03/13/2014	Detainees	North	North	Tabbaneh	"34.439561,35.8468110000001,20"	1000
+Healthcare	421	02/13/2014	Detainees	North	North	Bnehrane	"34.2745630000001,35.851169,557"	670
+Weapon Wounded	20	04/13/2015	Detainees	North	North	Bnehrane	"34.2745630000001,35.851169,557"	430
+Weapon Wounded	20	04/13/2015	Detainees	North	North	Tabbaneh	"34.439561,35.8468110000001,20"	60
+Rehabilitation	102	02/26/2014	Detainees	North	North	Bkeftine	"34.3847500000001,35.8611720000001,161"	150
+Relief Assistance	31468	02/26/2014	Palestinian Refugees	South	South	Rachidiye	"33.2379790000001,35.2175700000001,15"	500
+Agriculture	95	02/14/2014	Palestinian Refugees	South	South	Rachidiye	"33.2379790000001,35.2175700000001,15"	600
+Relief Assistance	6725	02/14/2015	Palestinian Refugees	South	South	Ain el Hiloue	"33.547451,35.384579,46"	430
+WatHab	321249	02/14/2015	Palestinian Refugees	South	South	Ain el Hiloue	"33.547451,35.384579,46"	60
+Healthcare	38	02/14/2015	Palestinian Refugees	South	South	Ain el Hiloue	"33.547451,35.384579,46"	150
+Weapon Wounded	128	08/14/2015	Palestinian Refugees	South	South	Ain el Hiloue	"33.547451,35.384579,46"	350
+Rehabilitation	298	02/14/2015	Palestinian Refugees	South	South	Ain el Hiloue	"33.547451,35.384579,46"	550
