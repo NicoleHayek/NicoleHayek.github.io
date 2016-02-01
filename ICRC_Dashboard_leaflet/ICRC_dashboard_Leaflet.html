@@ -31,7 +31,30 @@
 </head>
 
 <body>
-
+<a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+<nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+        <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+        <li class="sidebar-brand">
+            <a href="#top">Dashboard</a>
+        </li>
+        <li>
+            <a href="#gen">General Info</a>
+        </li>
+        <li>
+            <a href="#syrref">Syrian Refugees/WW</a>
+        </li>
+		<li>
+            <a href="#vulleb">Vulnerable Lebanese</a>
+        </li>
+		<li>
+            <a href="#Pals">Palestinian Refugees</a>
+        </li>
+		<li>
+            <a href="#det">Detainees</a>
+        </li>
+    </ul>
+</nav>
   <script type="text/javascript">
 function toggle(el) {
   document.getElementById(el).style.display
@@ -70,27 +93,24 @@ window.onload = function() {
 </nav>
 
 <div id='left'>
-			<h3 id="key_stats_title"><b>General Overview of Lebanon:</b></h3>
+			<p id="gen"><h3><b>General Overview of Lebanon:</b></h3></p>
 			<div class="col-md-4"> 
-			<h4 id="Pal_Nbr"><b><font color=#b21d1d >1,200,000</font></b></h4><h5 id="Pal_text">Syrian Refugee</h5>
+			<p><h4><b><font color=#b21d1d >1,200,000</font></b></h4><h5 id="Pal_text">Syrian Refugee</h5></p>
 			</div>
 			<div class="col-md-4"> 
-			<h4 id="Pal_Nbr"><b><font color=#b21d1d >1,000,000</font></b></h4><h5 id="Pal_text">Vulnerable Lebanese</h5>
+			<p><h4><b><font color=#b21d1d >1,000,000</font></b></h4><h5 id="Pal_text">Vulnerable Lebanese</h5></p>
 			</div>
 			<div class="col-md-4"> 
-			<h4 id="Pal_Nbr"><b><font color=#b21d1d >400,000</font></b></h4><h5 id="Pal_text">Palestinian Refugee</h5>
+			<p><h4><b><font color=#b21d1d >400,000</font></b></h4><h5 id="Pal_text">Palestinian Refugee</h5></p>
 			</div>
 			<p><b><font color=#7F7F7F >&nbsp;&nbsp;&nbsp;&nbsp;--------------------------------------------------</font></b></p>	
-			<p>•	No president for the past 1.5 years<br/>
-•	Large and dramatic Syrian and Palestinian refugee presence <br/>
-•	Absence of a Sunni community leader to address their needs and fears <br/>
-•	Persistent military commitment of Hezbollah in Syria <br/>
-•	Poor condition of places of detention <br/>
-•	Mass migration of Lebanese, Syrian and Palestinian citizens to Turkey
+			<p>	•	Presidential vacuum for the past 1.5 years<br/>
+	•	Large and dramatic Syrian and Palestinian refugee presence <br/>
+	•	Absence of a Sunni community leader to address their needs and fears <br/>
+	•	Persistent military commitment of Hezbollah in Syria <br/>
+	•	Poor condition of places of detention <br/>
+	•	Mass migration of Lebanese, Syrian and Palestinian citizens to Turkey
 </p>
-</div>
-<div id='right'>
-			<h3 id="key_stats_title"><b>Red Cross / Red Crescent Movement:</b></h3>
 </div>
 <div class ="container" id="dashboard">
 <div class="row" id="cccm">
@@ -110,54 +130,55 @@ window.onload = function() {
 			<div class="row">
 <div class="col-md-4">   
        <div class="row">     
-<h3 id="key_stats_title"><b>General Overview</b></h3>
-<p><small><i>Click on title for detailed info</i></small></p>
-<a href="#" onclick="return toggle('txt')">Syrian Refugees/WW</a><br>
-<div id="txt" class="answers">The government formed in March 2014 remains the only functioning
-power in the country in the continued absence of a president and amidst a total paralysis of
-parliament. Yet, while the cabinet has tried to maintain its unison for the sake of economic
-and security stability, signs of discord begin to emerge threatening to paralyze the only body
-currently approving laws and decrees, therefore threatening the smooth running of the humanitarian
-response. Regional developments, in particular the ongoing armed conflict in Syria, continue to
-impinge on the fragile political landscape. In the eastern-border town of Arsal, the army maintains
-an intermittent presence as negotiations to free the security personnel held captive by Jabhat al 
-Nusra and the Islamic State group since the clashes last August have yet to yield results.</div>
-
-
-<a href="#" onclick="return toggle('txt1')">Vulnerable Lebanese</a><br>
-<div id="txt1" class="answers"><p>Ein el Helwe camp is the largest Palestinian refugee camp in Lebanon (established
-by <font color=#b21d1d ><b>ICRC</b></font> in 1948) to accommodate 10,000 refugees from northern Palestine.
-The UNRWA’s estimated population of the camp (registered refugees) is around
-60,000 individuals. Even though other sources indicate that this "lawless zone"
-hosts a much larger population. In addition, 6'000/7'000 Palestinians fleeing
-from Syria are contributing to the camps' <b>overcrowding</b>, the <b>struggle for
-scarce basic services</b> <i>(education, water, health care, sanitation,housing and
-electricity)</i> and <b>resources</b>.</p></div>
-
-<a href="#" onclick="return toggle('txt2')">Palestinian Refugees</a><br>
-<div id="txt2" class="answers">Wounded and sick people, including refugees, have timely and unhindered
-access to adequate medical and surgical services during emergencies arising from armed conflict or other
-situations of violence. As the ICRC’s main partner, the National Society received financial/material
-support for its core services (see Red Cross and Red Crescent Movement) and activities. The support
-contributed to the basic treatment, including first aid and referral, of 8’903 Wounded and Sick people
-to health facilities for treatment as well as blood transfusion for 1’666 Syrian and Lebanese patients. </div>
-
-<a href="#" onclick="return toggle('txt3')">Detainees</a><br>
-<div id="txt3" class="answers">The government formed in March 2014 remains the only functioning
-power in the country in the continued absence of a president and amidst a total paralysis of
-parliament. Yet, while the cabinet has tried to maintain its unison for the sake of economic
-and security stability, signs of discord begin to emerge threatening to paralyze the only body
-currently approving laws and decrees, therefore threatening the smooth running of the humanitarian
-response. Regional developments, in particular the ongoing armed conflict in Syria, continue to
-impinge on the fragile political landscape. In the eastern-border town of Arsal, the army maintains
-an intermittent presence as negotiations to free the security personnel held captive by Jabhat al 
-Nusra and the Islamic State group since the clashes last August have yet to yield results.</div>
 <div class ="Area" id="NEH" class ="dc-chart"><h5><b>Type of Beneficiaries Assisted</b></h5></div>
 <div class ="Cost" id="NEH" class ="dc-chart"><h5><b>Cost of Projects by Type of Activity</b></h5></div>
 
  </div>  
 		</div>
+            <div class="row" id="cccm">
+                <div class="col-md-10">
+                   <p id="syrref"><h4>Syrian Refugees/WW</h4></p>
+				   <p>this is a dumb text Cause dried no solid no an small so still widen. Ten weather evident smiling bed against she examine its.
+				   Rendered far opinions two yet moderate sex striking. Sufficient motionless compliment by stimulated assistance at.
+				   Convinced resolving extensive agreeable in it on as remainder. Cordially say affection met who propriety him.
+				   Are man she towards private weather pleased. In more part he lose need so want rank no. At bringing or he
+				   sensible pleasure. Prevent he parlors do waiting be females an message society. </p>
+                  <div class="row">
+                    <div  class="col-md-6"><div class ="Area" id="NEH" class ="dc-chart"><h5><b>Type of Assistance</b></h5></div></div>
+                     <div  class="col-md-6"><div class ="Cost" id="NEH" class ="dc-chart"><h5><b>Cost of Projects by Type of Activity</b></h5></div></div>
+                </div>
+                </div>
+            </div>
+            <div class="row" id="cccm">
+                <div class="col-md-10">
+                   <p id="vulleb"><h4>Vulnerable Lebanese</h4></p>
+				   <p>this is a dumb text Eat imagine you chiefly few end ferrars compass. Be visitor females am ferrars inquiry.
+				   Latter law remark two lively thrown. Spot set they know rest its. Raptures law diverted believed jennings consider
+				   children the see. Had invited beloved carried the colonel. Occasional principles discretion it as he unpleasing
+				   boisterous. She bed sing dear now son half. </p>
 
+                </div>
+            </div>
+            <div class="row" id="cccm">
+                <div class="col-md-10">
+                   <p id="Pals"><h4>Palestinian Refugees</h4></p>
+				   <p>this is a dumb text Old education him departure any arranging one prevailed. Their end whole might began her.
+				   Behaved the comfort another fifteen eat. Partiality had his themselves ask pianoforte increasing discovered. So mr
+				   delay at since place whole above miles. He to observe conduct at detract because. Way ham unwilling not breakfast
+				   furniture explained perpetual. Or mr surrounded conviction so astonished literature. Songs to an blush woman be sorry
+				   young. We certain as removal attempt.  </p>
+
+                </div>
+            </div>
+            <div class="row" id="cccm">
+                <div class="col-md-10">
+                   <p id="det"><h4>Detainees</h4></p>
+				   <p>this is a dumb text Entire any had depend and figure winter. Change stairs and men likely wisdom new happen piqued
+				   six. Now taken him timed sex world get. Enjoyed married an feeling delight pursuit as offered. As admire roused length
+				   likely played pretty to no. Means had joy miles her merry solid order.  </p>
+
+                </div>
+            </div>
     </div>
 	</div>
     </div>
@@ -293,6 +314,38 @@ $('#reset').on('click', function (){
 
 </script>
 
+ <script src="js/bootstrap.js"></script>
+<!-- Custom Theme JavaScript -->
+<script>
+// Closes the sidebar menu
+$("#menu-close").click(function(e) {
+    e.preventDefault();
+    $("#sidebar-wrapper").toggleClass("active");
+});
+
+// Opens the sidebar menu
+$("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#sidebar-wrapper").toggleClass("active");
+});
+
+// Scrolls to the selected menu item on the page
+$(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        }
+    });
+});
+</script>
 </body>
 
 
