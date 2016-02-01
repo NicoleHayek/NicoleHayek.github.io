@@ -29,3 +29,4 @@ WatHab	321249	02/14/2015	Palestinian Refugees	South	South	Ain el Hiloue	"33.5474
 Healthcare	38	02/14/2015	Palestinian Refugees	South	South	Ain el Hiloue	"33.547451,35.384579,46"	150
 Weapon Wounded	128	08/14/2015	Palestinian Refugees	South	South	Ain el Hiloue	"33.547451,35.384579,46"	350
 Rehabilitation	298	02/14/2015	Palestinian Refugees	South	South	Ain el Hiloue	"33.547451,35.384579,46"	550
+Detainees	1000	02/14/2015	Detainees	Mount Lebanon	Mount Lebanon	Romie	"33.883545,35.619428,617"	800
