@@ -145,8 +145,10 @@ window.onload = function() {
 				   medical and surgical services during emergencies arising from armed conflict or other situations
 				   of violence. </p>
                   <div class="row">
-                    <div class="col-md-6"> <div class ="benef_SR" id="NEH" class ="dc-chart"><h5><b>Type of Assistance</b></h5></div></div>
-                    <div class ="act_SR" id="NEH" class ="dc-chart"><h5><b>Individuals Assisted by Type of Assistance</b></h5></div></div>
+                    <div class ="benef_SR" id="NEH" class ="dc-chart"><h5><b>Type of Assistance</b></h5></div>
+                    <div class ="act_SR" id="NEH" class ="dc-chart"><h5><b>Individuals Assisted by Type of Assistance</b></h5></div>
+					</div>
+					</div>
                 </div>
                 </div>
             </div>
@@ -276,8 +278,7 @@ dc.rowChart (".Area",groupname)
 	  .height(200)
       .dimension(BenefDim)
       .group(BenefGroup)
-   // .stack(governoratesByHousehold)
-   // .elasticX(true)
+      .elasticX(true)
       .renderLabel(true)
       .ordering(function (p) { return -p.value;})
       .colors(['#3182bd'])
@@ -292,8 +293,7 @@ dc.rowChart (".Sector",groupname)
 	  .height(150)
       .dimension(SectorDim)
       .group(SectorGroup)
-   // .stack(governoratesByHousehold)
-   // .elasticX(true)
+      .elasticX(true)
       .renderLabel(true)
       .ordering(function (p) { return -p.value;})
       .colors(['#3182bd'])
@@ -308,8 +308,7 @@ dc.rowChart (".Type",groupname)
 	  .height(350)
       .dimension(TypeDim)
       .group(TypeGroup)
-   // .stack(governoratesByHousehold)
-   // .elasticX(true)
+	  .elasticX(true)
       .renderLabel(true)
       .ordering(function (p) { return -p.value;})
       .colors(['#3182bd'])
@@ -324,8 +323,7 @@ dc.rowChart (".benef_SR",groupname)
 	  .height(250)
       .dimension(SR_sectDim)
       .group(SR_sectGroup)
-   // .stack(governoratesByHousehold)
-   // .elasticX(true)
+	  .elasticX(true)
       .renderLabel(true)
       .ordering(function (p) { return -p.value;})
       .colors(['#3182bd'])
@@ -334,14 +332,13 @@ dc.rowChart (".benef_SR",groupname)
       .xAxis().ticks(4).tickFormat(d3.format("s"));
 	  
 var SR_ActDim = xf.dimension(function(d) {return d['act_type'];});
-var SR_ActGroup  = SR_sectDim.group().reduceSum(function (d) { return +d.Syr_ref_WW; });
+var SR_ActGroup  = SR_ActDim.group().reduceSum(function (d) { if (d['Syr_ref_WW']>0) {return d['Syr_ref_WW']} });
 dc.rowChart (".act_SR",groupname)
 	  .width(350)
-	  .height(250)
+	  .height(350)
       .dimension(SR_ActDim)
       .group(SR_ActGroup)
-   // .stack(governoratesByHousehold)
-   // .elasticX(true)
+	  .elasticX(true)
       .renderLabel(true)
       .ordering(function (p) { return -p.value;})
       .colors(['#3182bd'])
