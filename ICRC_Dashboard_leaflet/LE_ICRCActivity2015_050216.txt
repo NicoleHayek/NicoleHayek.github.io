@@ -1,0 +1,69 @@
+project_name	Vul_leb	Syr_ref_WW	Pal_ref	Detainees	benef_nbr_tot	cost	Sector	act_type	act_type_detail	ICRC_AoO	district	town	geo_location
+Cash for Work in Bedawi Camp			70		70		Economic Assistance	Cash Assistance	Cash for Work	North Lebanon	El Minieh-Dennie	beddawi camp	34.444184, 35.866843,1
+Cash for Work in Middle Dreib	200	201			401		Economic Assistance	Cash Assistance	Cash for Work	North Lebanon	Akkar	Dreib	34.605732, 36.137685,1
+Unconditional Cash Grants	912				912		Economic Assistance	Cash Assistance	Cash Transfer Program	Bekaa			34.165341, 36.263613,1
+Winter Assistance	3605				3605		Economic Assistance	Cash Assistance	Cash for Winter Needs	Bekaa			34.082403, 36.314267,1
+Cash for Work in Tripoli	3361				3361		Economic Assistance	Cash Assistance	Cash for Work	North Lebanon	Tebenne		34.444867, 35.855239,1
+Kitchen Project in Tripoli	1252				1252		Economic Assistance	Food Assistance		North Lebanon	Tebenne		34.446116, 35.855051,1
+Winter Assistance		1740			1740		Economic Assistance	Cash Assistance	Cash for Winter Needs	Lebanon			0,0,0
+Unconditional Cash Grants		1000			1000		Economic Assistance	Cash Assistance	Cash Transfer Program	Lebanon			0,0,0
+Winter Assistance		596	7400		7996		Economic Assistance	Cash Assistance	Cash for Winter Needs	Bekaa			33.998391, 36.122526,1
+Livelihood Project	805		240		1045		Economic Assistance	Livelihood Support		Bekaa	baalbek	Ras Baalbek	34.260828, 36.416762,1
+Food Assistance	6190	15667	1736		23593		Economic Assistance	Food Assistance	Food parcels	Lebanon			0,0,0
+Emergency Distribution	6410	12666	2168		21244		Economic Assistance	Essential Household Items	HH items	Lebanon			0,0,0
+Tripoli Central Prison Ventilation Improvement Project				975	975		Wathab	Wathab in Detention	Safe drinking water supply	North Lebanon	Tripoli	Tripoli Prison	34.437361, 35.850097,1
+Baalbek District Prison				135	135		Wathab	Wathab in Detention	Building rehabilitation & construction	Bekaa	baalbek	Baalbek District prison	34.012420, 36.217743,1
+General Security Retention Centre				400	400		Wathab	Wathab in Detention	Sanitation & environmental health	Beirut	Beirut	Beirut GenSec Retention Center 	33.8861797,35.5046127,1
+Halba District Prison				87	87		Wathab	Wathab in Detention	Building rehabilitation & construction	North Lebanon	Akkar	Halba District prison	34.5424938,36.0778167,1
+Roumieh Central Prison				3200	3200		Wathab	Wathab in Detention	Safe drinking water supply	Beirut	El Metn	Roumieh Central Prison	33.8851877,35.5902673,1
+Zahle Central Prison				651	651		Wathab	Wathab in Detention	Building rehabilitation & construction	Bekaa	Zahle	Zahle Prison	33.8461037,35.9021283,1
+Provision of Heating System to Chebaa Clinic		1			1		Wathab	Infrastructures in ICRC supported or HCiD affected health facilities	Energy supply	South Lebanon	hasbaya	Chebaa Al Rhama Clinic 	33.3486704,35.7520799,1
+Ras Al Ain pumping station rehabilitation 	14820	4180			19000		Wathab	Municipal services	Safe drinking water supply	South Lebanon	Sour	Ras al Ain pumping station	33.2277465,35.2234002,1
+Water Supply Increase in Aarsal	3900	1100			5000		Wathab	Municipal services	Safe drinking water supply	Bekaa	baalbek	Aarsal Municipality	34.1796075,36.4201739,1
+Aarsal Medical Centre 3M Installation		10			10		Wathab	Infrastructures in ICRC supported or HCiD affected health facilities	Building rehabilitation & construction	Bekaa	baalbek	Aarsal Medical Center Hospital	34.1803114,36.4178034,1
+Chamsine Pumping Station	23400	6600			30000		Wathab	Municipal services	Safe drinking water supply	Bekaa	Zahle	Chamsine Chamsine station	33.7417632,35.9561248,1
+Khiara Water supply support	1560	440			2000		Wathab	Municipal services	Safe drinking water supply	Bekaa	West Bekaa	Khiara Municipality 	33.685335,35.8287025,1
+Heating system Rehab Ablah Hospital	16				16		Wathab	Infrastructures in ICRC supported or HCiD affected health facilities	Building rehabilitation & construction	Bekaa	Zahle	Ablah LAF military Hospital	33.8681111,35.9588534,1
+Construction of Reservoir in Maaser	1500				1500		Wathab	Municipal services	Safe drinking water supply	Bekaa	El Hermel	Maasser	34.2693707,36.2800155,1
+Maqne Water supply 	550				550		Wathab	Municipal services	Safe drinking water supply	Bekaa	baalbek	Maqne Village	34.0788884,36.2059743,1
+Qaa Well Rehabilitation	13260	3740			17000		Wathab	Municipal services	Safe drinking water supply	Bekaa	baalbek	Al Qaa village	34.3422334,36.4785211,1
+QRCS support to sewage systems		21654			21654		Wathab	Support to Informal Settlements and Hosting Communities	Sanitation & environmental health	Bekaa	baalbek	Aarsal Municipality	34.1796075,36.4201739,1
+Lebanese Returnees Assistance		500			500		Wathab	Support to Informal Settlements and Hosting Communities	Safe drinking water supply	Bekaa	baalbek	Ras Baalbeck Town	34.260828, 36.416762,1
+Support to FRC		3190			3190		Wathab	Support to Informal Settlements and Hosting Communities	Transitional human settlements	Bekaa			0,0,0
+Thermal Insulation - QRCS		29000			29000		Wathab	Support to Informal Settlements and Hosting Communities	Transitional human settlements	Bekaa	baalbek	Aarsal Municipality	34.1796075,36.4201739,1
+Toufiqiye water supply	4290	1210			5500		Wathab	Municipal services	Safe drinking water supply	Bekaa	baalbek	Toufiqiye Village	34.1754592,36.2471001,1
+Zellaya Reservoir execution	3900	1100			5000		Wathab	Municipal services	Safe drinking water supply	Bekaa	West Bekaa	Zellaya village	33.4594695,35.6540939,1
+Emergency rehabilitation Burj Barajneh explosions	415				415		Wathab	Support to Informal Settlements and Hosting Communities	Building rehabilitation & construction	Beirut			33.8468514,35.4997283,1
+Beddaoui camp intervention			6000		6000		Wathab	Municipal services	Sanitation & environmental health	North Lebanon	El Minieh-Dennie	Bedawi camp popular committee	34.444184, 35.866843,1
+LRC activities		2000			2000		Wathab	Support to Informal Settlements and Hosting Communities	Safe drinking water supply	North Lebanon			0,0,0
+Nahr Al Bared river cleaning			500		500		Wathab	Municipal services	Sanitation & environmental health	North Lebanon	Akkar	Naher el Bared Palestinian Camp	34.5148874,35.9624523,1
+Zahraa Hospital Tripoli		20			20		Wathab	Infrastructures in ICRC supported or HCiD affected health facilities	Building rehabilitation & construction	North Lebanon			0,0,0
+Zaylaa sewage replacement (Jabal Mohsen)		200			200		Wathab	Municipal services	Sanitation & environmental health	North Lebanon			0,0,0
+EeH-Taytaba-Clashes repairs			150		150		Wathab	Municipal services	Building rehabilitation & construction	South Lebanon	Saida	Ein El Helwe camp 	33.5434575,35.3765203,1
+Ein el Helwe WatHab Support for Health Facilities 			5		5		Wathab	Infrastructures in ICRC supported or HCiD affected health facilities	Building rehabilitation & construction	South Lebanon	Saida	Ein el  Helwe Al Akssa Hospital	33.5460565,35.3797433,1
+Ein el Hilwe Electrical Power Network Rehabilitation			34775		34775		Wathab	Municipal services	Energy supply	South Lebanon			0,0,0
+Hamshari Gathering Installation of Water System 			480		480		Wathab	Support to Informal Settlements and Hosting Communities	Safe drinking water supply	South Lebanon	Saida	Hamshari Gathering 	33.5479405,35.3936623,1
+Khiyam Water Wells 	21450	6050			27500		Wathab	Municipal services	Safe drinking water supply	South Lebanon			0,0,0
+Marj Al Khokh ITS Support		1400			1400		Wathab	Support to Informal Settlements and Hosting Communities	Safe drinking water supply	South Lebanon			0,0,0
+Support to Kfar Bedda Gathering			1700		1700		Wathab	Municipal services	Energy supply	South Lebanon			0,0,0
+Wasta Palestinian Gathering-Tyre Area			1400		1400		Wathab	Municipal services	Energy supply	South Lebanon	Saida	Wasta Palestinian gathering	33.3494059,35.2558673,1
+Ghazzeh water supply project 	23400	6600			30000		Wathab	Municipal services	Safe drinking water supply	Bekaa	West Bekaa	Ghazze Village 	33.6679302,35.8193382,1
+EeH Camp Provision of Fire Extinguishers to 20 Sectors			34775		34775		Wathab	Municipal services	Building rehabilitation & construction	South Lebanon	Saida	Ein EL Helwe Antenna camp	33.5438132,35.3760468,1
+Provision of Fuel for 39 villages in Tyre caza	60447	17051			77498		Wathab	Municipal services	Energy supply	South Lebanon			0,0,0
+SHRO PHC Bar Elias WatHab intervention in collabortion with health		50			50		Wathab	Infrastructures in PRP programs health facilities	Building rehabilitation & construction	Bekaa	Zahle	Bar Elias syrian relief SHRO	33.7745472, 35.9023423,1
+WTTC		1211			1211		Health	WW treatment		North Lebanon	Tripoli	Tripoli WTTC	34.4152088,35.8389823,1
+SHRO PHC		78943			78943		Health	Primary health care		Bekaa	Zahle		33.7745472, 35.9023423,1
+Miriata SDC		9109			9109		Health	Primary health care		North Lebanon	Zgharta		34.4188225,35.9312353,1
+IHS Tyr Maashouk		15181			15181		Health	Primary health care		South Lebanon	Sour		33.268144,35.222594,1
+El Bireh SDC		9109			9109		Health	Primary health care		North Lebanon	Akkar		34.588484,36.235745,1
+PRCS Nahr El Bared		15181			15181		Health	Primary health care		North Lebanon	Akkar		34.512066588,35.959905879,1
+Al Rahma Shebaa PHC		4554			4554		Health	Primary health care		South Lebanon	Hasbaya		33.349058,35.748689,1
+IHS El Khiam		21254			21254		Health	Primary health care		South Lebanon	Marjaayoun		33.329428,35.613933,1
+AMC PHC		24290			24290		Health	Primary health care		Bekaa	Baalbek		34.1802558,36.4184738,1
+IHS Baalbeck		91088			91088		Health	Primary health care		Bekaa	Baalbek		34.005186,36.207957,1
+New Arsal PHC		24290			24290		Health	Primary health care		Bekaa	Baalbek		34.1796737,36.4192748,1
+Aarsal field hospital 1		444			444		Health	Field hospital	Medical assistance	Bekaa		Aarsal	34.1845624,36.4559143,1
+Aarsal field hospital 2		444			444		Health	Field hospital	Medical assistance	Bekaa		Aarsal	34.1889464,36.4679073,1
+Red Cross Messages				590	590		Protection	Restoring Family Links	Red cross messages	Lebanon			0,0,0
+Oral Messages				1250	1250		Protection	Restoring Family Links	Oral Messages/Salamat	Lebanon			0,0,0
+Repatriation from ILOT				10	10		Protection	Restoring Family Links	Crossing borders with ILOT	South Lebanon		on the border	33.0944165,35.1025403,
