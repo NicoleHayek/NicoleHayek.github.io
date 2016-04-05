@@ -1,0 +1,410 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+    <title>ICRC dashboard Leaflet Test - Lebanon</title>
+
+    <!-- Bootstrap -->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+    <link type="text/css" href="css/leaflet.css" rel="stylesheet"/>
+    <link type="text/css" href="css/leaflet.markercluster.css" rel="stylesheet"/>
+	<style type='text/css'>
+	html, body {height: 100%; margin: 0}
+	#left {width: 17%; height: 775px;float: left;}
+	#right {width: 12%; height: 775px; border: 2px solid red;; float: right;}
+	</style>
+    <link rel="stylesheet" type="text/css" href="css/dc.css">
+    <!-- Add IntroJs styles  -->
+    <link rel="stylesheet" type="text/css" href="css/introjs.css">
+    <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/site.css"/>
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+<nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+        <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+        <li class="sidebar-brand">
+            <a href="#top">Dashboard</a>
+        </li>
+        <li>
+            <a href="#gen">General Info</a>
+        </li>
+        <li>
+            <a href="#syrref">Syrian Refugees/WW</a>
+        </li>
+		<li>
+            <a href="#vulleb">Vulnerable Lebanese</a>
+        </li>
+		<li>
+            <a href="#Pals">Palestinian Refugees</a>
+        </li>
+		<li>
+            <a href="#det">Detainees</a>
+        </li>
+    </ul>
+</nav>
+  <script type="text/javascript">
+function toggle(el) {
+  document.getElementById(el).style.display
+    = (document.getElementById(el).style.display == "none") ? "block" : "none";
+// could substitute 'inline' for 'block' in above line
+  return false;
+}
+window.onload = function() {
+  var sel = document.getElementsByClassName('answers');
+  for (var i=0; i<sel.length; i++) { sel[i].style.display = 'none'; }
+}
+</script>
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+      </ul>
+      <ul class="nav navbar-nav navbar-left">
+        <li style="top:6px"><img name="onetidHeadbnnr0" src="image/2000px-Emblem_of_the_ICRC.svg.png" width="40" height="40"  widhtalt="Page d'accueil" style="border-width:0px;"><li>
+		  <a class="navbar-brand" href="#"><b><font color=#b21d1d >&nbsp;&nbsp;&nbsp;&nbsp;ICRC Overall activities in Lebanon</font></b></a>
+	      </ul>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div id='left'>
+			<p id="gen"><h3><b>&nbsp;&nbsp;General Overview of &nbsp;&nbsp;Lebanon:</b></h3></p>
+			<div class="col-md-4"> 
+			<p><h4><b><font color=#b21d1d >1,200,000</font></b></h4><h5 id="Pal_text">Syrian Refugee</h5></p>
+			</div>
+			<div class="col-md-4"> 
+			<p><h4><b><font color=#b21d1d >1,000,000</font></b></h4><h5 id="Pal_text">Vulnerable Lebanese</h5></p>
+			</div>
+			<div class="col-md-4"> 
+			<p><h4><b><font color=#b21d1d >400,000</font></b></h4><h5 id="Pal_text">Palestinian Refugee</h5></p>
+			</div>
+			<p><b><font color=#7F7F7F >&nbsp;&nbsp;&nbsp;&nbsp;--------------------------------------------------</font></b></p>	
+			<p>&nbsp;&nbsp;	•	State authorities remained engulfed in a &nbsp;&nbsp;complete deadlock. The country “functions” &nbsp;&nbsp;through informal
+			agreements between political &nbsp;&nbsp;rivals as no president is in place since May 2014 &nbsp;&nbsp;and Parliamentary elections were
+			postponed to &nbsp;&nbsp;2017<br/>
+	&nbsp;&nbsp;•	Hezbollah persistent military commitment in Syria &nbsp;&nbsp;and its national assertiveness increased the risk &nbsp;&nbsp;of sectarian
+	tension (Sunni population in disarray &nbsp;&nbsp;without political leadership). Potential &nbsp;&nbsp;radicalization of opposition. <br/>
+	&nbsp;&nbsp;•	Situation of SY (and PAL) refugees in the &nbsp;&nbsp;country remained dramatic (No legal status, less &nbsp;&nbsp;assistance,
+	growing indebtment, inaccessible &nbsp;&nbsp;health care).  <br/>
+	&nbsp;&nbsp;•	Dozens of thousands of migrants (SY and other &nbsp;&nbsp;refugees) left or passed through Lebanon to &nbsp;&nbsp;reach Turkey/Greece
+	after the initial opening of &nbsp;&nbsp;Europe’s borders. <br/>
+</p>
+</div>
+<div class ="container" id="dashboard">
+<div class="row" id="cccm">
+
+ <div  data-step="7" data-intro="Click on the map to filter by site" data-position="left">
+<div class="col-md-7">
+ <h5 id="maptext"><b>Map: Location of the ICRC projects throughout 2015 in Lebanon</b></h5>
+ <div  class="map" id="cccm"  > </div>
+ <p><small><i>Click/Zoom on the map to filter sites</i></small></p>
+ <br>
+ <div id="dcontent" style="width:100%; background-color: #E2E2FC; padding-left: 5px"></div>
+<a class="reset btn btn-primary btn-sm" id="reset" href="#">Reset All</a>&nbsp;&nbsp;<a class="reset btn btn-primary btn-sm" id="data" href="ICRC_Dashboard_leaflet.xls">Download the Data</a>
+</div>
+ </div>
+    <div style="display: block;" class="container" id="dashboard">
+            <div class="row" id="cccm">
+			<div class="row">
+<div class="col-md-4">   
+       <div class="row">     
+<div class ="Area" id="NEH" class ="dc-chart"><h5><b>Project Distribution by Area of Operation</b></h5></div>
+<div class ="Sector" id="NEH" class ="dc-chart"><h5><b>Type of Intervention</b></h5></div>
+<div class ="Type" id="NEH" class ="dc-chart"><h5><b>Individuals Assisted by Project Type</b></h5></div>
+ </div>  
+		</div>
+            <div class="row" id="cccm">
+                <div class="col-md-10">
+                   <p id="syrref"><h4>Syrian Refugees/WW</h4></p>
+				   <p>Wounded and sick people, including refugees, have timely and unhindered access to adequate
+				   medical and surgical services during emergencies arising from armed conflict or other situations
+				   of violence. </p>
+                  <div class="row">
+                    <div class ="benef_SR" id="NEH" class ="dc-chart"><h5><b>Type of Assistance</b></h5></div>
+                    <div class ="act_SR" id="NEH" class ="dc-chart"><h5><b>Individuals Assisted by Type of Assistance</b></h5></div>
+					</div>
+					</div>
+                </div>
+                </div>
+            </div>
+            <div class="row" id="cccm">
+                <div class="col-md-10">
+                   <p id="vulleb"><h4>Vulnerable Lebanese</h4></p>
+				   <p>this is a dumb text Eat imagine you chiefly few end ferrars compass. Be visitor females am ferrars inquiry.
+				   Latter law remark two lively thrown. Spot set they know rest its. Raptures law diverted believed jennings consider
+				   children the see. Had invited beloved carried the colonel. Occasional principles discretion it as he unpleasing
+				   boisterous. She bed sing dear now son half. </p>
+
+                </div>
+            </div>
+            <div class="row" id="cccm">
+                <div class="col-md-10">
+                   <p id="Pals"><h4>Palestinian Refugees</h4></p>
+				   <p>Palestinian refugees struggle to cope with difficult living conditions amidst persistent tensions in refugee
+				   camps while assistance to Palestinian refugees from Syria remains limited as UNRWA struggles with funding.
+				   ICRC aid to Palestinians was geared up through structural support (electricity, shelters rehabilitation),
+				   medical services, access to livelihood and financial assistance for most vulnerable (PRS)
+				   </p>
+
+                </div>
+            </div>
+            <div class="row" id="cccm">
+                <div class="col-md-10">
+                   <p id="det"><h4>Detainees</h4></p>
+				   <p>Detainees are afforded treatment and living conditions, including respect for judicial guarantees and the
+			   principle of non-refoulement, that comply with international law and internationally recognized standards. They
+		   are able to restore/maintain contact with relatives. </p>
+
+                </div>
+            </div>
+    </div>
+	</div>
+    </div>
+	</div>
+
+
+    <script type="text/javascript" src="js/intro.js"></script>
+    <script type="text/javascript" src="js/d3_002.js"></script>
+    <script type="text/javascript" src="js/d3.js"></script>
+    <script type="text/javascript" src="js/crossfilter.js"></script>
+    <script type="text/javascript" src="js/dc.js"></script>
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+
+<!--maps-->
+    <script type="text/javascript" src="js/leaflet.js"></script>
+    <script type="text/javascript" src="js/leaflet.markercluster.js"></script>
+    <script type="text/javascript" src="js/dc.leaflet.js"></script>
+
+<script type="text/javascript">
+
+/*     Markers      */
+//var numberFormat = d3.format(",f");
+var groupname = "marker-select";
+
+
+d3.tsv("LE_ICRCActivity2015_050416.txt", function(data) {
+ // drawMarkerSelect(data);
+  drawMarkerArea(data);
+});
+
+
+function regroup(dim, cols) {
+    var _groupAll = dim.groupAll().reduce(
+        function(p, v) { // add
+            cols.forEach(function(c) {
+                p[c] += v[c];
+            });
+            return p;
+        },
+        function(p, v) { // remove
+            cols.forEach(function(c) {
+                p[c] -= v[c];
+            });
+            return p;
+        },
+        function() { // init
+            var p = {};
+            cols.forEach(function(c) {
+                p[c] = 0;
+            });
+            return p;
+        });
+    return {
+        all: function() {
+            // or _.pairs, anything to turn the object into an array
+            return d3.map(_groupAll.value()).entries();
+        }
+    };
+}
+
+
+
+function drawMarkerArea(data) {
+//function drawMarkerSelect(data) {
+
+
+  var xf = crossfilter(data);
+
+
+  var groupname = "marker-select";
+
+  var location = xf.dimension(function(d) { return d.geo_location+","+ d['project_name']+","+ d['benef_nbr_tot']+","+ d['Sector']+","+ d['act_type'] +","+ d['description']; });
+  var locationGroup = location.group();
+  
+  dc.leafletMarkerChart(".map",groupname)
+      .dimension(location)
+      .group(locationGroup)
+      .width(200)
+      .height(1000)
+      .center([33.897619, 35.871615])
+      .zoom(9)
+	 .cluster(true)
+	  .filterByArea(true)
+      .renderPopup(true)
+  .popup(function(d,marker){
+            var values =  d.key.split(",");
+            console.log(values)
+            var lat = (values[0] !== "") ? values[0] : "0"; 
+            var lng = (values[1] !== "") ? values[1] : "0"; 
+            var value = (values[2] !== "") ? values[2] : null;
+            var project = (values[3] !== "") ? values[3] : null;
+			var benef_tot = (values[4] !== "") ? values[4] : null;
+			var sect = (values[5] !== "") ? values[5] : null;
+			var sectdet = (values[6] !== "") ? values[6] : null;
+			var description = (values[7] !== "") ? values[7] : null;
+      return "<b>Project: </b>"+project +"<br/>"
+	  + "<b>Project description : </b>"+description +"<br/>"
+	 + "<b>Total Beneficiary: </b>"+benef_tot +" Ind."+"<br/>"
+	 + "<b>Activity: </b>"+sect +" /"+sectdet +"<br/>";
+      });
+
+var BenefDim = xf.dimension(function(d) {return d['ICRC_AoO'];});
+var BenefGroup  = BenefDim.group();
+dc.rowChart (".Area",groupname)
+	  .width(350)
+	  .height(200)
+      .dimension(BenefDim)
+      .group(BenefGroup)
+      .elasticX(true)
+      .renderLabel(true)
+      .ordering(function (p) { return -p.value;})
+      .colors(['#3182bd'])
+      .colorDomain([0,0])
+      .colorAccessor(function(d, i){return 1;})
+      .xAxis().ticks(4).tickFormat(d3.format("s"));
+
+var SectorDim = xf.dimension(function(d) {return d['Sector'];});
+var SectorGroup  = SectorDim.group().reduceSum(function (d) { return +d.benef_nbr_tot; });
+dc.rowChart (".Sector",groupname)
+	  .width(350)
+	  .height(150)
+      .dimension(SectorDim)
+      .group(SectorGroup)
+      .elasticX(true)
+      .renderLabel(true)
+      .ordering(function (p) { return -p.value;})
+      .colors(['#3182bd'])
+      .colorDomain([0,0])
+      .colorAccessor(function(d, i){return 1;})
+      .xAxis().ticks(4).tickFormat(d3.format("s"))
+	  ;
+
+var TypeDim = xf.dimension(function(d) {return d['act_type'];});
+var TypeGroup  = TypeDim.group().reduceSum(function (d) { return +d.benef_nbr_tot; });
+dc.rowChart (".Type",groupname)
+	  .width(350)
+	  .height(350)
+      .dimension(TypeDim)
+      .group(TypeGroup)
+	  .elasticX(true)
+      .renderLabel(true)
+      .ordering(function (p) { return -p.value;})
+      .colors(['#3182bd'])
+      .colorDomain([0,0])
+      .colorAccessor(function(d, i){return 1;})
+      .xAxis().ticks(4).tickFormat(d3.format("s"));
+
+var SR_sectDim = xf.dimension(function(d) {return d['Sector'];});
+var SR_sectGroup  = SR_sectDim.group().reduceSum(function (d) { return +d.Syr_ref_WW; });
+dc.rowChart (".benef_SR",groupname)
+	  .width(350)
+	  .height(250)
+      .dimension(SR_sectDim)
+      .group(SR_sectGroup)
+	  .elasticX(true)
+      .renderLabel(true)
+      .ordering(function (p) { return -p.value;})
+      .colors(['#3182bd'])
+      .colorDomain([0,0])
+      .colorAccessor(function(d, i){return 1;})
+      .xAxis().ticks(4).tickFormat(d3.format("s"));
+	  
+var SR_ActDim = xf.dimension(function(d) {return d['act_type'];});
+var SR_ActGroup  = SR_ActDim.group().reduceSum(function (d) { if (d['Syr_ref_WW']>0) {return d['Syr_ref_WW']} });
+dc.rowChart (".act_SR",groupname)
+	  .width(350)
+	  .height(350)
+      .dimension(SR_ActDim)
+      .group(SR_ActGroup)
+	  .elasticX(true)
+      .renderLabel(true)
+      .ordering(function (p) { return -p.value;})
+      .colors(['#3182bd'])
+      .colorDomain([0,0])
+      .colorAccessor(function(d, i){return 1;})
+      .xAxis().ticks(4).tickFormat(d3.format("s"));
+$('#reset').on('click', function (){
+  dc.filterAll(groupname);
+  dc.redrawAll(groupname);
+  return false;
+})
+
+
+  dc.renderAll(groupname);
+}
+
+</script>
+
+ <script src="js/bootstrap.js"></script>
+<!-- Custom Theme JavaScript -->
+<script>
+// Closes the sidebar menu
+$("#menu-close").click(function(e) {
+    e.preventDefault();
+    $("#sidebar-wrapper").toggleClass("active");
+});
+
+// Opens the sidebar menu
+$("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#sidebar-wrapper").toggleClass("active");
+});
+
+// Scrolls to the selected menu item on the page
+$(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        }
+    });
+});
+</script>
+</body>
+
+
+</html>
