@@ -160,7 +160,10 @@ window.onload = function() {
 				   Latter law remark two lively thrown. Spot set they know rest its. Raptures law diverted believed jennings consider
 				   children the see. Had invited beloved carried the colonel. Occasional principles discretion it as he unpleasing
 				   boisterous. She bed sing dear now son half. </p>
-
+					<div class="row">
+                    <div class ="benef_VL" id="NEH" class ="dc-chart"><h5><b>Type of Assistance</b></h5></div>
+                    <div class ="act_VL" id="NEH" class ="dc-chart"><h5><b>Individuals Assisted by Type of Assistance</b></h5></div>
+					</div>
                 </div>
             </div>
             <div class="row" id="cccm">
@@ -171,7 +174,10 @@ window.onload = function() {
 				   ICRC aid to Palestinians was geared up through structural support (electricity, shelters rehabilitation),
 				   medical services, access to livelihood and financial assistance for most vulnerable (PRS)
 				   </p>
-
+					<div class="row">
+                    <div class ="benef_PAL" id="NEH" class ="dc-chart"><h5><b>Type of Assistance</b></h5></div>
+                    <div class ="act_PAL" id="NEH" class ="dc-chart"><h5><b>Individuals Assisted by Type of Assistance</b></h5></div>
+					</div>
                 </div>
             </div>
             <div class="row" id="cccm">
@@ -180,7 +186,10 @@ window.onload = function() {
 				   <p>Detainees are afforded treatment and living conditions, including respect for judicial guarantees and the
 			   principle of non-refoulement, that comply with international law and internationally recognized standards. They
 		   are able to restore/maintain contact with relatives. </p>
-
+					<div class="row">
+                    <div class ="benef_Det" id="NEH" class ="dc-chart"><h5><b>Type of Assistance</b></h5></div>
+                    <div class ="act_Det" id="NEH" class ="dc-chart"><h5><b>Individuals Assisted by Type of Assistance</b></h5></div>
+					</div>
                 </div>
             </div>
     </div>
@@ -353,6 +362,96 @@ dc.rowChart (".act_SR",groupname)
 	  .height(350)
       .dimension(SR_ActDim)
       .group(SR_ActGroup)
+	  .elasticX(true)
+      .renderLabel(true)
+      .ordering(function (p) { return -p.value;})
+      .colors(['#3182bd'])
+      .colorDomain([0,0])
+      .colorAccessor(function(d, i){return 1;})
+      .xAxis().ticks(4).tickFormat(d3.format("s"));
+	  
+var VL_sectDim = xf.dimension(function(d) {return d['Sector'];});
+var VL_sectGroup  = VL_sectDim.group().reduceSum(function (d) { return +d.Vul_leb; });
+dc.rowChart (".benef_VL",groupname)
+	  .width(350)
+	  .height(250)
+      .dimension(VL_sectDim)
+      .group(VL_sectGroup)
+	  .elasticX(true)
+      .renderLabel(true)
+      .ordering(function (p) { return -p.value;})
+      .colors(['#3182bd'])
+      .colorDomain([0,0])
+      .colorAccessor(function(d, i){return 1;})
+      .xAxis().ticks(4).tickFormat(d3.format("s"));
+	  
+var VL_ActDim = xf.dimension(function(d) {return d['act_type'];});
+var VL_ActGroup  = VL_ActDim.group().reduceSum(function (d) { if (d['Vul_leb']>0) {return d['Vul_leb']} });
+dc.rowChart (".act_VL",groupname)
+	  .width(350)
+	  .height(350)
+      .dimension(VL_ActDim)
+      .group(VL_ActGroup)
+	  .elasticX(true)
+      .renderLabel(true)
+      .ordering(function (p) { return -p.value;})
+      .colors(['#3182bd'])
+      .colorDomain([0,0])
+      .colorAccessor(function(d, i){return 1;})
+      .xAxis().ticks(4).tickFormat(d3.format("s"));
+	  
+var PAL_sectDim = xf.dimension(function(d) {return d['Sector'];});
+var PAL_sectGroup  = PAL_sectDim.group().reduceSum(function (d) { return +d.Pal_ref; });
+dc.rowChart (".benef_PAL",groupname)
+	  .width(350)
+	  .height(250)
+      .dimension(PAL_sectDim)
+      .group(PAL_sectGroup)
+	  .elasticX(true)
+      .renderLabel(true)
+      .ordering(function (p) { return -p.value;})
+      .colors(['#3182bd'])
+      .colorDomain([0,0])
+      .colorAccessor(function(d, i){return 1;})
+      .xAxis().ticks(4).tickFormat(d3.format("s"));
+	  
+var PAL_ActDim = xf.dimension(function(d) {return d['act_type'];});
+var PAL_ActGroup  = PAL_ActDim.group().reduceSum(function (d) { if (d['Pal_ref']>0) {return d['Pal_ref']} });
+dc.rowChart (".act_PAL",groupname)
+	  .width(350)
+	  .height(350)
+      .dimension(PAL_ActDim)
+      .group(PAL_ActGroup)
+	  .elasticX(true)
+      .renderLabel(true)
+      .ordering(function (p) { return -p.value;})
+      .colors(['#3182bd'])
+      .colorDomain([0,0])
+      .colorAccessor(function(d, i){return 1;})
+      .xAxis().ticks(4).tickFormat(d3.format("s"));
+	  
+var Det_sectDim = xf.dimension(function(d) {return d['Sector'];});
+var Det_sectGroup  = Det_sectDim.group().reduceSum(function (d) { return +d.Detainees; });
+dc.rowChart (".benef_Det",groupname)
+	  .width(350)
+	  .height(250)
+      .dimension(Det_sectDim)
+      .group(Det_sectGroup)
+	  .elasticX(true)
+      .renderLabel(true)
+      .ordering(function (p) { return -p.value;})
+      .colors(['#3182bd'])
+      .colorDomain([0,0])
+      .colorAccessor(function(d, i){return 1;})
+      .xAxis().ticks(4).tickFormat(d3.format("s"));
+	  
+var Det_ActDim = xf.dimension(function(d) {return d['act_type'];});
+var Det_ActGroup  = Det_ActDim.group().reduceSum(function (d) { if (d['Detainees']>0) {return d['Detainees']} });
+dc.rowChart (".act_Det",groupname)
+	  .width(350)
+	  .height(350)
+      .dimension(Det_ActDim)
+      .group(Det_ActGroup)
 	  .elasticX(true)
       .renderLabel(true)
       .ordering(function (p) { return -p.value;})
